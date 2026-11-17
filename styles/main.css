@@ -1,0 +1,509 @@
+/* Shared styles for the Explore India website. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #edf2eb;
+  color: #29352d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 28px auto;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dce5dc;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(34, 57, 39, 0.1);
+}
+
+.site-header {
+  display: flex;
+  min-height: 270px;
+  align-items: center;
+  padding: 38px 7%;
+  color: #fff;
+  background-color: #315746;
+  background-image: linear-gradient(90deg, rgba(17, 47, 37, 0.82), rgba(17, 47, 37, 0.08)), url("../images/banner.jpg");
+  background-position: center 48%;
+  background-size: cover;
+}
+
+.header-copy {
+  max-width: 690px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+  color: #d7edcf;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.7rem, 6vw, 4.5rem);
+  line-height: 1.08;
+}
+
+.tagline {
+  margin: 12px 0 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.site-nav {
+  background: #244b3a;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 5%;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+  color: #203d2f;
+  background: #d9e8d5;
+  outline: none;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(230px, 0.85fr);
+  gap: 36px;
+  padding: 38px 5%;
+  align-items: start;
+}
+
+.main-content,
+.sidebar {
+  min-width: 0;
+}
+
+h2,
+h3,
+h4 {
+  color: #28543d;
+  line-height: 1.3;
+}
+
+.main-content > h2 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+}
+
+.main-content h3 {
+  margin: 28px 0 10px;
+  font-size: 1.3rem;
+}
+
+.main-content p {
+  margin: 0 0 15px;
+}
+
+.intro {
+  margin-bottom: 22px !important;
+  color: #596b5f;
+  font-size: 1.08rem;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero-figure {
+  margin: 22px 0 27px;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #e7eee6;
+}
+
+.hero-figure img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 8px 12px;
+  color: #657369;
+  font-size: 0.84rem;
+}
+
+.image-credit {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.75rem;
+}
+
+.image-credit a {
+  color: #365a43;
+}
+
+/* Floated image demonstrates text wrapping around an image. */
+.welcome-image {
+  float: left;
+  width: min(42%, 260px);
+  margin: 4px 20px 12px 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #e7eee6;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.experience-panel,
+.checklist-box,
+.important-reminder {
+  padding: 19px 21px;
+  border: 1px solid #dce9d9;
+  border-radius: 9px;
+  background: #f3f8f1;
+}
+
+.experience-panel h3,
+.checklist-box h4,
+.important-reminder h3 {
+  margin: 0 0 10px;
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.check-list li {
+  margin: 6px 0;
+}
+
+.check-list li::marker {
+  color: #54825a;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2c6844;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  color: #183c2a;
+}
+
+.sidebar {
+  display: grid;
+  gap: 18px;
+}
+
+.sidebar-card,
+.sidebar-note {
+  padding: 21px;
+  border: 1px solid #e0e8df;
+  border-radius: 9px;
+  background: #f8faf7;
+}
+
+.sidebar-card h2,
+.sidebar-note h2 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.sidebar-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.sidebar-card li {
+  margin: 8px 0;
+}
+
+.sidebar-links a,
+.destination-list a {
+  color: #365a43;
+  text-decoration-color: #b7cbb6;
+  text-underline-offset: 3px;
+}
+
+.sidebar-links a:hover,
+.destination-list a:hover,
+.sidebar-links a:focus-visible,
+.destination-list a:focus-visible {
+  color: #173c29;
+  text-decoration-color: currentColor;
+}
+
+.sidebar-note {
+  border-color: #d6e5d1;
+  background: #edf5e9;
+}
+
+.sidebar-note p {
+  margin: 0;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px;
+  margin-top: 24px;
+}
+
+.destination-card {
+  overflow: hidden;
+  border: 1px solid #e0e8df;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(37, 67, 45, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(37, 67, 45, 0.12);
+}
+
+.destination-card figure img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.destination-card figcaption {
+  background: #f6f8f5;
+}
+
+.card-copy {
+  padding: 13px 15px 17px;
+}
+
+.card-copy h3 {
+  margin: 2px 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.card-copy p {
+  margin: 0 0 9px;
+  font-size: 0.94rem;
+}
+
+.card-copy .location-label {
+  margin: 0;
+  color: #64806a;
+  font-size: 0.77rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.card-copy .fact {
+  margin-bottom: 0;
+  color: #58665b;
+  font-size: 0.88rem;
+}
+
+.tips-content > .intro {
+  margin-bottom: 25px !important;
+}
+
+.tip-section {
+  padding: 17px 0;
+  border-top: 1px solid #e5ebe3;
+}
+
+.tip-section h3 {
+  margin: 0 0 8px;
+}
+
+.tip-section ol,
+.tip-section ul {
+  margin: 8px 0 0;
+  padding-left: 1.4rem;
+}
+
+.tip-section li {
+  margin: 5px 0;
+}
+
+.checklist-box {
+  margin-top: 14px;
+}
+
+.important-reminder {
+  margin-top: 18px;
+  border-left: 4px solid #71966a;
+}
+
+.important-reminder p {
+  margin: 0;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 5%;
+  color: #e8f0e7;
+  background: #244b3a;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .site-container {
+    margin: 0 auto;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .site-header {
+    min-height: 230px;
+    padding: 32px 6%;
+  }
+
+  .content-layout {
+    grid-template-columns: minmax(0, 1.7fr) minmax(205px, 0.9fr);
+    gap: 24px;
+    padding: 30px 4%;
+  }
+
+  .sidebar-card,
+  .sidebar-note {
+    padding: 17px;
+  }
+
+  .destination-grid {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 15px;
+  }
+
+  .site-header {
+    min-height: 215px;
+    background-position: center;
+  }
+
+  .site-nav ul {
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .site-nav a {
+    padding: 13px 14px;
+  }
+
+  .content-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 27px 5%;
+  }
+
+  .sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sidebar-note {
+    grid-column: 1 / -1;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-card figure img {
+    height: 210px;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-nav ul {
+    gap: 0;
+  }
+
+  .site-nav a {
+    padding: 12px 10px;
+    font-size: 0.92rem;
+  }
+
+  .welcome-image {
+    float: none;
+    width: 100%;
+    margin: 0 0 14px;
+  }
+
+  .welcome-image img {
+    height: 210px;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-note {
+    grid-column: auto;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
